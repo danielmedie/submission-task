@@ -1,7 +1,7 @@
 @use "variables" as v;
 
 body {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: 0;
     background-image: v.$hero_image;
@@ -10,8 +10,9 @@ body {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-
+    // overflow: auto;
     section{
+      height: 100vh;
         display: flex;
         justify-content: center;
         header{
@@ -113,8 +114,6 @@ body {
                 transform: scale(1);
               }
         }
-
-
         article{
             text-align: center;
         //   '  justify-content: center;'
@@ -129,12 +128,35 @@ body {
             font-size: medium;
         }
     }
+    .team {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        // display: flex;
+        // justify-content: center;
+        width: 100%;
+        height: auto;
+        color: white;
+        background-color: rgb(206, 200, 200);
+        &__members
+        &__members__container{
+            width: 40px;
+            height: 40px;
+        }
+        &__members__img{
+          border-radius: 50%;
+            width: 40%;
+            height: 10%;
+        }
+        &__members_description {
+            margin-top: 10px;
+        }
+    }
 
     footer {
-        justify-content: last baseline;
         background-color: black;
         color: white;
-        margin-top: auto;
-        padding-left: 40%;
+        // margin-top: auto;
+        padding-left: 29%;
     }
 }
