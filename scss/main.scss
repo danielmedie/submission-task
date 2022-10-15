@@ -7,9 +7,10 @@ body {
     background-image: v.$hero_image;
     background-size: cover;
     justify-content: center;
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    // justify-content: center;
     // overflow: auto;
     section{
       height: 100vh;
@@ -127,29 +128,54 @@ body {
         p{
             font-size: medium;
         }
+
     }
+
     .team {
-        text-align: center;
-        display: flex;
+      display: flex;
+      text-align: center;
         flex-wrap: wrap;
         // display: flex;
         // justify-content: center;
         width: 100%;
         height: auto;
-        color: white;
-        background-color: rgb(206, 200, 200);
-        &__members
-        &__members__container{
-            width: 40px;
-            height: 40px;
+        color: black;
+        background-color: white;
+        justify-content: center;
+        padding-bottom: 40px;
+        h2 {
+          display: block;
+          width: 100%;
         }
+        h5{
+          width: 100%;
+        }
+        &__members {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        // &__members__container{
+        //     width: 40px;
+        //     height: 40px;
+        // }
         &__members__img{
           border-radius: 50%;
-            width: 40%;
-            height: 10%;
-        }
+            width: 50%;
+            height: 100%;
+            box-shadow: 0px 0px 30px rgba(15, 15, 15, 0.57);
+            // box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+            // padding:7px;
+          }
         &__members_description {
-            margin-top: 10px;
+          // text-align: center;
+          // justify-content: center;
+          color: black;
+          background-color: rgba(204, 202, 202, 0.766);
+          padding: 10%;
+          margin-top: 10px;
+          width: 60%;
+          border-radius: 7%;
         }
     }
 
