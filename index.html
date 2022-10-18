@@ -4,46 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Some random page</title>
     <link rel="stylesheet" href="./scss/main.scss">
+    <script src="https://kit.fontawesome.com/bc5eefc1c7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section>
+    <section id="home">
         <header>
             <input id="toggle" type="checkbox"></input>
-
             <label for="toggle" class="hamburger">
             <div class="top-bun"></div>
             <div class="meat"></div>
             <div class="bottom-bun"></div>
             </label>
-
             <div class="nav">
-            <div class="nav-wrapper">
-                <nav>
-                <a href="#">Hem</a><br>
-                <a href="#">Om</a><br>
-                <a href="#">Kontakt</a><br>
-                </nav>
+                <div class="nav-wrapper">
+                    <nav>
+                    <a href="#home">Hem</a><br>
+                    <a href="#about">Om</a><br>
+                    <a href="#contact">Kontakt</a><br>
+                    </nav>
+                </div>
             </div>
+            <article class="welcomeText">
+            <h1>Welcome to nature</h1>
+            <p>A journey through time and sheep</p>
+            <p>To see how ...cotton ... is mage, made I mean...</p>
+            </article>
+            <div class="container">
+                <div class="field">
+                    <a class="a"href="#about">
+                        <div class="scroll"></div>
+                  </a>
+                </div>
             </div>
         </header>
-        <article>
-        <h1>Welcome to nature</h1>
-        <p>A journey through time and sheep</p>
-        <p>To see how ...cotton ... is mage, made I mean...</p>
-        </article>
     </section>
 
-    <section class="team">
+    <section id="about" class="team">
+        <h2>Träffa laget</h2>
         <div class="team__members">
-            <h2>Träffa laget</h2>
             <h5>Rakib</h5>
             <div class="team__members__container">
                 <img class="team__members__img"src="../src/images/Rakib_Square.png" alt="Rakib">
             </div>
-            <article class="team__members_description">
-                <p><strong>"Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på nya tekniker</strong></p>
+            <article class="team__members__description">
+                <p><span class="team__members__description__quotes"> <strong>”</strong> </span> Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på nya tekniker</p>
             </article>
         </div>
         <div class="team__members">
@@ -51,17 +57,17 @@
             <div class="team__members__container">
                 <img class="team__members__img" src="../src/images/Alexandra_Square.png" alt="Alexandra">
             </div>
-            <article class="team__members_description">
-                <p><strong>"Alexandra håller reda på alla överallt och ser till att det flyter</strong></p>
+            <article class="team__members__description">
+                <p><span class="team__members__description__quotes"> <strong>”</strong> </span> Alexandra håller reda på alla överallt och ser till att det flyter</p>
             </article>
         </div>
         <div class="team__members">
             <h5>Lasse</h5>
             <div class="team__members__container">
-                <img class="team__members__img" src="../src/images/NoPerson_Square.png" alt=""Lasse>
+                <img class="team__members__img" src="../src/images/NoPerson_Square.png" alt="Lasse">
             </div>
-            <article class="team__members_description">
-                <p><strong>"Gör övriga saker... mestadels...</strong></p>
+            <article class="team__members__description">
+                <p> <span class="team__members__description__quotes"> <strong>”</strong> </span> Gör övriga saker... mestadels...</p>
             </article>
         </div>
         <div class="team__members">
@@ -69,23 +75,42 @@
             <div class="team__members__container">
                 <img class="team__members__img" src="../src/images/Sebastian_Square.png" alt="Sebastian">
             </div>
-            <article class="team__members_description">
-                <p><strong>"En av våra utbildare som har stor erfarenhet av ganska många saker</strong></p>
+            <article class="team__members__description">
+                <p><span class="team__members__description__quotes"> <strong>”</strong> </span> En av våra utbildare som har stor erfarenhet av ganska många saker</p>
             </article>
         </div>
-
+        <div class="container__team__arrow">
+            <div class="field">
+                <a class="a"href="#contact">
+                    <div class="scroll"></div>
+              </a>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>Tegel Consulting AB</p>
-        <p>Agatvägen18</p>
-        <p>168 60 Bromma</p>
-        <br>
-        <p>info at tegelconsulting.se</p>
-        <p>070-123 456 78</p>
-        <br>
-        <p>Instagram</p>
-        <p>Twitter</p>
-        <p>Facebook</p>
-    </footer>
+    <footer id="contact">
+        <section class="contact__adress">
+            <p class="contact__adress__info">Tegel Consulting AB</p>
+            <p class="contact__adress__info">Agatvägen 18</p>
+            <p class="contact__adress__info">168 60 Bromma</p>
+        </section>
+        <section class="contact__info">
+            <p class="contact__info__path">info at tegelconsulting.se</p>
+            <p class="contact__info__path">070-123 456 78</p>
+        </section>
+        <section class="contact__social">
+        <a class="contact__social__media">
+            <i class="fa-brands fa-instagram"></i>
+            <span class="contact__social__media__path">Instagram</span>
+        </a>
+        <a class="contact__social__media">
+            <i class="fa-brands fa-twitter"></i>
+            <span class="contact__social__media__path">Twitter</span>
+        </a>
+        <a class="contact__social__media">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span class="contact__social__media__path">Facebook</span>
+        </a>
+    </section>
+    </footer>  
 </body>
 </html>
