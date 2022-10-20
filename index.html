@@ -19,10 +19,10 @@
             </label>
             <div class="nav">
                 <div class="nav-wrapper">
-                    <nav>
-                    <a href="#home">Hem</a><br>
-                    <a href="#about">Om</a><br>
-                    <a href="#contact">Kontakt</a><br>
+                    <nav class="nav__wrapper__nav">
+                    <a class="nav__wrapper__nav--a" href="#home">Hem</a><br>
+                    <a class="nav__wrapper__nav--a" href="#about">Om</a><br>
+                    <a class="nav__wrapper__nav--a" href="#contact">Kontakt</a><br>
                     </nav>
                 </div>
             </div>
@@ -31,13 +31,9 @@
             <p>A journey through time and sheep</p>
             <p>To see how ...cotton ... is mage, made I mean...</p>
             </article>
-            <div class="container">
-                <div class="field">
-                    <a class="a"href="#about">
-                        <div class="scroll"></div>
-                  </a>
-                </div>
-            </div>
+            <a class="arrow__down--team" href="#about">
+                <i class='fas fa-arrow-circle-down'></i>
+            </a>
         </header>
     </section>
 
@@ -49,7 +45,7 @@
                 <img class="team__members__img"src="../src/images/Rakib_Square.png" alt="Rakib">
             </div>
             <article class="team__members__description">
-                <p><span class="team__members__description__quotes"> <strong>”</strong> </span> Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på nya tekniker</p>
+                <p><span class="team__members__description__quotes"> <i class="fa fa-quote-right"></i> </span> Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på nya tekniker</p>
             </article>
         </div>
         <div class="team__members">
@@ -58,7 +54,7 @@
                 <img class="team__members__img" src="../src/images/Alexandra_Square.png" alt="Alexandra">
             </div>
             <article class="team__members__description">
-                <p><span class="team__members__description__quotes"> <strong>”</strong> </span> Alexandra håller reda på alla överallt och ser till att det flyter</p>
+                <p><span class="team__members__description__quotes"> <i class="fa fa-quote-right"></i> </span> Alexandra håller reda på alla överallt och ser till att det flyter</p>
             </article>
         </div>
         <div class="team__members">
@@ -67,7 +63,7 @@
                 <img class="team__members__img" src="../src/images/NoPerson_Square.png" alt="Lasse">
             </div>
             <article class="team__members__description">
-                <p> <span class="team__members__description__quotes"> <strong>”</strong> </span> Gör övriga saker... mestadels...</p>
+                <p> <span class="team__members__description__quotes"> <i class="fa fa-quote-right"></i> </span> Gör övriga saker... mestadels...</p>
             </article>
         </div>
         <div class="team__members">
@@ -76,18 +72,58 @@
                 <img class="team__members__img" src="../src/images/Sebastian_Square.png" alt="Sebastian">
             </div>
             <article class="team__members__description">
-                <p><span class="team__members__description__quotes"> <strong>”</strong> </span> En av våra utbildare som har stor erfarenhet av ganska många saker</p>
+                <p><span class="team__members__description__quotes"> <i class="fa fa-quote-right"></i> </span> En av våra utbildare som har stor erfarenhet av ganska många saker</p>
             </article>
         </div>
-        <div class="container__team__arrow">
+        <!-- <div class="container__team__arrow">
             <div class="field">
                 <a class="a"href="#contact">
                     <div class="scroll"></div>
               </a>
             </div>
-        </div>
+        </div> -->
+        <a class="arrow__down--contact" href="#contact">
+            <i class='fas fa-arrow-circle-down'></i>
+        </a>
     </section>
+
     <footer id="contact">
+        <ul class="contact__adress">
+            <li class="contact__adress__info">Tegel Consulting AB</li>
+            <li class="contact__adress__info">Agatvägen 18</li>
+            <li class="contact__adress__info">168 60 Bromma</li>
+        </ul>
+        <ul class="contact__info">
+            <li class="contact__info__path">info at tegelconsulting.se</li>
+            <li class="contact__info__path">070-123 456 78</li>
+            <!-- <li class="contact__adress__info"></li> -->
+        </ul>
+        <ul class="contact__social">
+            <li class="contact__social__media">
+                <a class="contact__social__media__path">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span class="contact__social__media__path__text" id="instagram">Instagram</span>
+                </a>
+            </li>
+            <li class="contact__social__media">
+                <a class="contact__social__media__path">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span class="contact__social__media__path__text" id="twitter">Twitter</span>
+                </a>
+            </li>
+            <li class="contact__social__media">
+                <a class="contact__social__media__path">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span class="contact__social__media__path__text" id="facebook">Facebook</span>
+                </a>
+            </li>
+        </ul>
+
+
+
+
+
+<!-- 
         <section class="contact__adress">
             <p class="contact__adress__info">Tegel Consulting AB</p>
             <p class="contact__adress__info">Agatvägen 18</p>
@@ -100,17 +136,17 @@
         <section class="contact__social">
         <a class="contact__social__media">
             <i class="fa-brands fa-instagram"></i>
-            <span class="contact__social__media__path">Instagram</span>
+            <span class="contact__social__media__path" id="instagram">Instagram</span>
         </a>
         <a class="contact__social__media">
             <i class="fa-brands fa-twitter"></i>
-            <span class="contact__social__media__path">Twitter</span>
+            <span class="contact__social__media__path" id="twitter">Twitter</span>
         </a>
         <a class="contact__social__media">
             <i class="fa-brands fa-facebook-f"></i>
-            <span class="contact__social__media__path">Facebook</span>
+            <span class="contact__social__media__path" id="facebook">Facebook</span>
         </a>
-    </section>
+    </section> -->
     </footer>  
 </body>
 </html>
