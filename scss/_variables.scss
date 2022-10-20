@@ -1,8 +1,9 @@
 $hero_image : url(../images/negative-space-black-forest-dawn.jpg);
 
+/*Breakpoints*/
+$desktop_breakpoint: 800px;
 
 /*Sizes*/
-$desktop_breakpoint: 800px;
 $zero : 0px;
 $xsmall : 5px;
 $small : 10px;
@@ -10,11 +11,16 @@ $small-medium: 18px;
 $medium : 20px;
 $large : 30px;
 $xxlarge : 300px;
+
 $nav_font_size : 32px;
 $border_size : 2px;
+
+
 $full_height : 100%;
 $full_width : 100%;
 $half : 50%;
+
 /*colors*/
+
 $main_color : white;
 $secundary_color : black;
